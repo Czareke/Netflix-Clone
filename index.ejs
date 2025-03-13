@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PharmaVerify - Verify Your Medicine</title>
+    <meta name="description" content="Verify the authenticity of your medications instantly" />
+    <meta name="author" content="PharmaVerify" />
+    <meta property="og:image" content="/og-image.png" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/fontawesome/css/all.css">
+   
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">PharmaVerify</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/verify">Verification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown" id="authSection">
+              <!-- This will show when user is not logged in -->
+              <a class="btn btn-primary ms-lg-3" href="/login" id="loginButton">Login</a>
+              
+              <!-- This will show when user is logged in -->
+              <a class="nav-link dropdown-toggle d-none" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-user me-2"></i><span id="userName">User</span>
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                <li><a class="dropdown-item" href="/profile"><i class="fas fa-user-circle me-2"></i>Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#" id="logoutButton"><i class="fas fa-sign-out-alt me-2"></i>Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5 mt-5">
+      <div class="container py-5">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInUp">
+              Verify Your Medicine <span class="gradient-text">Instantly</span>
+            </h1>
+            <p class="lead mb-5 animate__animated animate__fadeInUp animate__delay-1s">
+              Ensure the authenticity of your medications with our advanced verification system. 
+              Quick, reliable, and secure.
+            </p>
+            <div class="cta-wrapper animate__animated animate__fadeInUp animate__delay-2s">
+              <a href="/verify" class="btn btn-primary btn-lg px-5 py-3">
+                Verify Now
+                <i class="fas fa-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-shape-1"></div>
+      <div class="hero-shape-2"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section py-5">
+      <div class="container py-5">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <div class="card-body text-center p-5">
+                <div class="icon-wrapper mb-4">
+                  <i class="fas fa-qrcode fa-3x"></i>
+                </div>
+                <h3 class="h4 mb-3">Quick Verification</h3>
+                <p class="text-muted">Scan QR code or enter serial number to verify authenticity</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <div class="card-body text-center p-5">
+                <div class="icon-wrapper mb-4">
+                  <i class="fas fa-shield-alt fa-3x"></i>
+                </div>
+                <h3 class="h4 mb-3">Reliable Results</h3>
+                <p class="text-muted">Get instant and accurate verification results</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 border-0 shadow-sm hover-shadow">
+              <div class="card-body text-center p-5">
+                <div class="icon-wrapper mb-4">
+                  <i class="fas fa-clock fa-3x"></i>
+                </div>
+                <h3 class="h4 mb-3">Real-time Updates</h3>
+                <p class="text-muted">Database updated in real-time by verified pharmacists</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5">
+      <div class="container py-5 text-center">
+        <h2 class="display-6 fw-bold mb-4">Ready to verify your medicine?</h2>
+        <p class="lead mb-5">Join thousands of users who trust our platform for medication verification.</p>
+        <a href="/verify" class="btn btn-primary btn-lg px-5 py-3">
+          Get Started
+          <i class="fas fa-arrow-right ms-2"></i>
+        </a>
+      </div>
+      <div class="cta-shape"></div>
+    </section>
+        <!-- Footer -->
+        <footer class="footer py-5">
+            <div class="container">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                  <div class="footer-info">
+                    <a href="#" class="footer-brand mb-4">PharmaVerify</a>
+                    <p class="footer-desc mb-4">
+                      Ensuring the authenticity of medications through advanced verification systems. Your trusted partner in medication safety.
+                    </p>
+                    <div class="social-links">
+                      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                  <h5 class="footer-title">Quick Links</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#verify">Verification</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                  <h5 class="footer-title">Services</h5>
+                  <ul class="footer-links">
+                    <li><a href="#">Medicine Verification</a></li>
+                    <li><a href="#">QR Code Scanning</a></li>
+                    <li><a href="#">Real-time Updates</a></li>
+                    <li><a href="#">Pharmacy Network</a></li>
+                    <li><a href="#">Support</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <h5 class="footer-title">Newsletter</h5>
+                  <p class="footer-desc mb-3">Stay updated with our latest features and releases.</p>
+                  <div class="newsletter-form">
+                    <div class="input-group">
+                      <input type="email" class="form-control" placeholder="Enter your email">
+                      <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr class="footer-divider my-4">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <p class="copyright mb-0">
+                    © 2024 PharmaVerify. All rights reserved.
+                  </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                  <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+      
+          <!-- Bootstrap Bundle with Popper -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+          
+        </body>
+      </html>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const token = localStorage.getItem('token');
+      const userRole = localStorage.getItem('userRole');
+      const userName = localStorage.getItem('userName');
+      
+      const loginButton = document.getElementById('loginButton');
+      const userDropdown = document.getElementById('userDropdown');
+      const userNameSpan = document.getElementById('userName');
+      
+      if (token && userName) {
+        // Hide login button and show dropdown
+        loginButton.classList.add('d-none');
+        userDropdown.classList.remove('d-none');
+        userNameSpan.textContent = userName;
+      }
+      
+      // Add logout functionality
+      document.getElementById('logoutButton').addEventListener('click', function(e) {
+        e.preventDefault();
+        localStorage.removeItem('token');
+        localStorage.removeItem('userRole');
+        localStorage.removeItem('userName');
+        window.location.href = '/login';
+      });
+    });
+    </script>
+  </body>
+</html>
